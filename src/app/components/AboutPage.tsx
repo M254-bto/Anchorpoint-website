@@ -18,7 +18,7 @@ export function AboutPage() {
 
         <div className="absolute inset-0 opacity-20">
           <ImageWithFallback
-            src="/Static/WhatsApp Image 2026-01-29 at 11.12.58.jpeg"
+            src="/WhatsApp Image 2026-01-29 at 11.12.58.jpeg"
             alt="Mountain climb representing resilience journey"
             className="w-full h-full object-cover"
           />
@@ -95,7 +95,7 @@ export function AboutPage() {
             <div className="order-1 md:order-2 relative">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl group">
                 <ImageWithFallback
-                  src="/Static/WhatsApp Image 2026-01-27 at 12.46.17.jpeg"
+                  src="/WhatsApp Image 2026-01-27 at 12.46.17.jpeg"
                   alt="Mountain journey"
                   className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -109,7 +109,7 @@ export function AboutPage() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl group">
                 <ImageWithFallback
-                  src="/Static/WhatsApp Image 2026-01-29 at 11.12.59.jpeg"
+                  src="/WhatsApp Image 2026-01-29 at 11.12.59.jpeg"
                   alt="Mountain climb perseverance"
                   className="w-full h-[500px] object-cover group-hover:scale-105 transition-transform duration-700"
                 />

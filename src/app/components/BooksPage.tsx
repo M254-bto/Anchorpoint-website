@@ -20,7 +20,7 @@ export function BooksPage() {
         {/* Image Overlay */}
         <div className="absolute inset-0 opacity-20">
           <ImageWithFallback
-            src="/Static/Unshaken_Launch.jpeg"
+            src="/Unshaken_Launch.jpeg"
             alt="Book launch event"
             className="w-full h-full object-cover"
           />
@@ -59,7 +59,7 @@ export function BooksPage() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-full min-h-[350px]">
                   <ImageWithFallback
-                    src="/Static/Unshaken_1.jpeg"
+                    src="/Unshaken_1.jpeg"
                     alt="Unshaken Book Cover"
                     className="w-full h-full object-cover"
                   />
@@ -115,7 +115,7 @@ export function BooksPage() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-full min-h-[350px]">
                   <ImageWithFallback
-                    src="/Static/Cracking the code_2.jpeg"
+                    src="/Cracking the code_2.jpeg"
                     alt="Cracking the Code Book Cover"
                     className="w-full h-full object-cover"
                   />
@@ -197,7 +197,7 @@ export function BooksPage() {
             <Card className="overflow-hidden border-2 border-amber-400/30 hover:shadow-2xl transition-all duration-300 bg-white/10 backdrop-blur-md">
               <div className="relative h-60">
                 <ImageWithFallback
-                  src="/Static/WhatsApp Image 2026-01-29 at 11.12.59.jpeg"
+                  src="/WhatsApp Image 2026-01-29 at 11.12.59.jpeg"
                   alt="Mountain representing Beyond the Peak"
                   className="w-full h-full object-cover"
                 />

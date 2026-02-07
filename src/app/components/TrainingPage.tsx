@@ -20,7 +20,7 @@ export function TrainingPage() {
         {/* Image Overlay */}
         <div className="absolute inset-0 opacity-20">
           <ImageWithFallback
-            src="/Static/WhatsApp Image 2026-01-29 at 11.12.58.jpeg"
+            src="/WhatsApp Image 2026-01-29 at 11.12.58.jpeg"
             alt="Mountain climb workshop"
             className="w-full h-full object-cover"
           />

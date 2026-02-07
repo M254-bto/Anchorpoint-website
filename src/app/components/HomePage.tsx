@@ -29,7 +29,7 @@ export function HomePage() {
               playsInline
               className="w-full h-full object-cover opacity-60"
             >
-              <source src="/Static/WhatsApp Video 2026-01-29 at 11.12.56.mp4#t=18" type="video/mp4" />
+              <source src="/WhatsApp Video 2026-01-29 at 11.12.56.mp4#t=18" type="video/mp4" />
             </video>
           </div>
         </div>
@@ -101,7 +101,7 @@ export function HomePage() {
                 {/* Image */}
                 <div className="h-80 overflow-hidden">
                   <ImageWithFallback
-                    src="/Static/WhatsApp Image 2026-01-29 at 11.12.58.jpeg"
+                    src="/WhatsApp Image 2026-01-29 at 11.12.58.jpeg"
                     alt="Mountain climb experience"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -150,7 +150,7 @@ export function HomePage() {
               <div className="relative bg-neutral-900/60 backdrop-blur-sm rounded-3xl h-full overflow-hidden">
                 <div className="h-64 overflow-hidden">
                   <ImageWithFallback
-                    src="/Static/conference_1.jpeg"
+                    src="/conference_1.jpeg"
                     alt="Corporate training"
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -232,7 +232,7 @@ export function HomePage() {
               <div className="relative bg-emerald-900/30 backdrop-blur-sm rounded-3xl overflow-hidden h-full">
                 <div className="relative h-80 overflow-hidden">
                   <ImageWithFallback
-                    src="/Static/Unshaken_1.jpeg"
+                    src="/Unshaken_1.jpeg"
                     alt="Unshaken Book Cover"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -265,7 +265,7 @@ export function HomePage() {
               <div className="relative bg-neutral-900/60 backdrop-blur-sm rounded-3xl overflow-hidden h-full">
                 <div className="relative h-80 overflow-hidden">
                   <ImageWithFallback
-                    src="/Static/Cracking the code_1.jpeg"
+                    src="/Cracking the code_1.jpeg"
                     alt="Cracking the Code Book Cover"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -298,7 +298,7 @@ export function HomePage() {
               <div className="relative bg-emerald-900/40 backdrop-blur-sm rounded-3xl overflow-hidden h-full">
                 <div className="relative h-80 overflow-hidden">
                   <ImageWithFallback
-                    src="/Static/WhatsApp Image 2026-01-29 at 11.12.59.jpeg"
+                    src="/WhatsApp Image 2026-01-29 at 11.12.59.jpeg"
                     alt="Mountain climb - Beyond the Peak"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
@@ -516,7 +516,7 @@ export function HomePage() {
       <section className="py-24 md:py-32 bg-neutral-950 text-white relative overflow-hidden">
         <div className="absolute inset-0">
           <ImageWithFallback
-            src="/Static/WhatsApp Image 2026-01-27 at 12.46.17.jpeg"
+            src="/WhatsApp Image 2026-01-27 at 12.46.17.jpeg"
             alt="Mountain background"
             className="w-full h-full object-cover opacity-20"
           />
