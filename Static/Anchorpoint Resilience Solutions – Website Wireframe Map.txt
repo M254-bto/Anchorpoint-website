@@ -1,0 +1,87 @@
+﻿ANCHORPOINT RESILIENCE SOLUTIONS – WEBSITE WIREFRAME MAP
+This wireframe map illustrates how various elements, including books, manuscripts, workshops, mountain climbs and corporate training, integrate across the ARS website. It is intended to guide the web consultant during design and development.
+1. HOME
+Intended to give a preview of other pages of the website, guiding a user into the other pages for more information, but also availing the important information.
+* Hero section
+   * Background image/video: Zachary on a mountain climb
+   * Tagline: Building Strength, Clarity, and True North – One Step at a Time
+   * CTA buttons: Join a Workshop | Explore Books
+* Featured Workshops (Teaser)
+* Featured Books & Manuscripts
+   * Unshaken
+   * Cracking the Code
+   * Beyond the Peak (Manuscript)
+   * Governance in the Trenches (Manuscript)
+* Newsletter Signup
+* Testimonials (Highlights)
+* Contact
+* Footer
+Everything in the homepage, i.e. featured books and featured workshops, are a preview, since there are separate pages for those.
+
+
+
+
+
+
+2. ABOUT THE FOUNDER
+* Personal resilience journey
+* Mountain climbs as lived resilience practice
+* Mission, vision and ARS philosophy
+CTA: Contact 
+Find info at Static/My Resilience journey.docx
+
+
+3. SERVICES / WORKSHOPS
+Personal Resilience & Men’s Development
+* One-day intensive workshops
+* Experiential learning through mountain climbs
+* Anchored in Cracking the Code and Beyond the Peak
+
+Corporate & SME Training
+   * Corporate governance and business resilience
+   * Leadership under pressure and failure recovery
+   * Anchored in Governance in the Trenches
+CTA: Registration / Corporate Inquiry
+Resources at Static/Corporate Governance & Resilience write-up.docx
+   4. BOOKS & MANUSCRIPTS
+Published Books
+   * Unshaken: Finding Your True North Through Life’s Trials
+   * Cracking the Code: Unlocking True Masculine Strength
+Upcoming / Manuscripts
+   * Beyond the Peak: Lessons on Life and Resilience from Kenya’s Mountains
+   * Governance in the Trenches: Overcoming Business Failures With Resilience
+CTA: Purchase | Pre-order 
+   5. BLOG / RESOURCES
+Personal Resilience
+   * Mountain lessons
+   * Purpose, endurance, True North
+Corporate Resilience & Governance
+   * SME case studies
+   * Governance failures and recovery
+CTA: Subscribe | Read More
+   6. EVENTS / CALENDAR
+   * Workshops
+   * Mountain climb experiences
+   * Speaking engagements
+
+
+   7. CONTACT / INQUIRY
+   * Contact form
+   * Email/phone
+CTA: Request Information | Join a Workshop
+   8. FOOTER
+The footer will be at the bottom of every page
+   * Quick links
+   * Social media
+   * Newsletter signup
+   * ARS brand statement
+
+
+Core Integration Logic
+   * Mountains = metaphor + method for resilience
+   * Books = thought leadership
+   * Workshops = applied transformation
+   * Corporate governance = resilience at organizational level
+
+
+Lock in, take your time, we're not in a rush. I need your best impression of a designer and developer. Rework the design to a corporate design, that is also exciting and engaging. Images are in /Static/. The structure is set above, relevant content for sections are directed in the description. Make me Proud.

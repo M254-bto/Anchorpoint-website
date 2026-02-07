@@ -6,10 +6,12 @@ import { AboutPage } from '@/app/components/AboutPage';
 import { TrainingPage } from '@/app/components/TrainingPage';
 import { BooksPage } from '@/app/components/BooksPage';
 import { ContactPage } from '@/app/components/ContactPage';
+import { ScrollToTop } from '@/app/components/ScrollToTop';
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-white">
         <Header />
         <main className="flex-1">

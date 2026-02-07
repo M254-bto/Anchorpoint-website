@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Mountain, Sparkles } from 'lucide-react';
 import { Button } from '@/app/components/ui/button';
 import { Input } from '@/app/components/ui/input';
 import { Label } from '@/app/components/ui/label';
@@ -18,10 +18,8 @@ export function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real implementation, this would send data to a backend
     console.log('Form submitted:', formData);
     alert('Thank you for your interest! We will contact you soon.');
-    // Reset form
     setFormData({
       name: '',
       organization: '',
@@ -37,37 +35,48 @@ export function ContactPage() {
   };
 
   return (
-    <div>
+    <div className="bg-neutral-50">
       {/* Hero Section */}
-      <section className="bg-blue-900 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Work With Us
+      <section className="relative bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-900 text-white min-h-[60vh] flex items-center overflow-hidden">
+        {/* Pattern Overlay */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.15) 1px, transparent 0)`,
+            backgroundSize: '48px 48px'
+          }}></div>
+        </div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="max-w-4xl">
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-black mb-8 leading-[0.9]">
+              Let's Start<br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-200">
+                The Climb
+              </span>
             </h1>
-            <p className="text-xl text-blue-100 max-w-2xl mx-auto">
-              Start your resilience journey today. We're here to help.
+            <p className="text-xl md:text-2xl text-emerald-100 leading-relaxed max-w-3xl">
+              Whether you're seeking <span className="text-amber-300 font-bold">personal transformation</span>, organizational resilience training, or have questions about our workshops and books—let's connect.
             </p>
           </div>
         </div>
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-16 md:py-24">
+      <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                Start the Resilience Conversation
+              <h2 className="text-4xl md:text-5xl font-black text-neutral-900 mb-4">
+                Get In Touch
               </h2>
-              <p className="text-gray-600 mb-8">
-                Fill out the form below and we'll get back to you within 24 hours.
+              <p className="text-xl text-neutral-600 mb-8">
+                Fill out the form and we'll respond within 24 hours.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <Label htmlFor="name">Name *</Label>
+                  <Label htmlFor="name">Full Name *</Label>
                   <Input
                     id="name"
                     value={formData.name}
@@ -90,7 +99,7 @@ export function ContactPage() {
                 </div>
 
                 <div>
-                  <Label htmlFor="email">Email *</Label>
+                  <Label htmlFor="email">Email Address *</Label>
                   <Input
                     id="email"
                     type="email"
@@ -103,30 +112,32 @@ export function ContactPage() {
                 </div>
 
                 <div>
-                  <Label htmlFor="phone">Phone *</Label>
+                  <Label htmlFor="phone">Phone Number *</Label>
                   <Input
                     id="phone"
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => handleChange('phone', e.target.value)}
                     required
-                    placeholder="+1 (555) 123-4567"
+                    placeholder="+254 XXX XXX XXX"
                     className="mt-1"
                   />
                 </div>
 
                 <div>
-                  <Label htmlFor="interest">Area of Interest *</Label>
+                  <Label htmlFor="interest" className="text-neutral-700">Area of Interest *</Label>
                   <Select
                     value={formData.interest}
                     onValueChange={(value) => handleChange('interest', value)}
                   >
-                    <SelectTrigger className="mt-1">
+                    <SelectTrigger className="mt-1 border-neutral-300">
                       <SelectValue placeholder="Select an option" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="individual-training">Individual Training</SelectItem>
-                      <SelectItem value="organizational-training">Organizational Training</SelectItem>
+                      <SelectItem value="personal-workshops">Personal Resilience Workshops</SelectItem>
+                      <SelectItem value="mens-development">Men's Development Programs</SelectItem>
+                      <SelectItem value="mountain-climb">Mountain Climb Experience</SelectItem>
+                      <SelectItem value="corporate-training">Corporate Training & Governance</SelectItem>
                       <SelectItem value="books">Books & Publications</SelectItem>
                       <SelectItem value="general">General Inquiry</SelectItem>
                     </SelectContent>
@@ -134,19 +145,19 @@ export function ContactPage() {
                 </div>
 
                 <div>
-                  <Label htmlFor="message">Message *</Label>
+                  <Label htmlFor="message" className="text-neutral-700">Your Message *</Label>
                   <Textarea
                     id="message"
                     value={formData.message}
                     onChange={(e) => handleChange('message', e.target.value)}
                     required
-                    placeholder="Tell us about your needs and goals..."
-                    rows={5}
-                    className="mt-1"
+                    placeholder="Tell us about your needs, goals, or questions..."
+                    rows={6}
+                    className="mt-1 border-neutral-300"
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full bg-blue-900 hover:bg-blue-800">
+                <Button type="submit" size="lg" className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-black border-0 py-6">
                   <Send className="mr-2 h-5 w-5" />
                   Send Message
                 </Button>
@@ -154,96 +165,81 @@ export function ContactPage() {
             </div>
 
             {/* Contact Information */}
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">
-                Let's Build Resilience Together
+            <div className="bg-gradient-to-br from-emerald-950 via-emerald-900 to-teal-900 text-white rounded-2xl p-10">
+              <Mountain className="h-12 w-12 text-amber-400 mb-6" />
+              
+              <h2 className="text-3xl md:text-4xl font-black mb-4">
+                Let's Build<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">
+                  Resilience Together
+                </span>
               </h2>
-              <p className="text-gray-600 mb-8">
-                We're committed to supporting your resilience journey. Reach out to us 
-                through any of the following channels.
+              <p className="text-emerald-100 mb-10 text-lg leading-relaxed">
+                We're committed to supporting your resilience journey. Reach out through any of these channels.
               </p>
 
-              <div className="space-y-6 mb-12">
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="h-6 w-6 text-blue-900" />
+              <div className="space-y-8">
+                <div className="flex items-start group">
+                  <div className="w-14 h-14 bg-amber-400/10 border-2 border-amber-400/30 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-amber-400/20 transition-colors">
+                    <Mail className="h-6 w-6 text-amber-400" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
+                    <h3 className="font-black text-white mb-2">Email</h3>
                     <a
                       href="mailto:info@anchorpointresilience.com"
-                      className="text-gray-600 hover:text-blue-900 transition-colors"
+                      className="text-emerald-100 hover:text-amber-400 transition-colors text-lg"
                     >
                       info@anchorpointresilience.com
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-6 w-6 text-blue-900" />
+                <div className="flex items-start group">
+                  <div className="w-14 h-14 bg-amber-400/10 border-2 border-amber-400/30 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-amber-400/20 transition-colors">
+                    <Phone className="h-6 w-6 text-amber-400" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
+                    <h3 className="font-black text-white mb-2">Phone</h3>
                     <a
-                      href="tel:+15551234567"
-                      className="text-gray-600 hover:text-blue-900 transition-colors"
+                      href="tel:+254700000000"
+                      className="text-emerald-100 hover:text-amber-400 transition-colors text-lg"
                     >
-                      +1 (555) 123-4567
+                      +254 700 000 000
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-blue-900" />
+                <div className="flex items-start group">
+                  <div className="w-14 h-14 bg-amber-400/10 border-2 border-amber-400/30 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-amber-400/20 transition-colors">
+                    <MapPin className="h-6 w-6 text-amber-400" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="font-semibold text-gray-900 mb-1">Office</h3>
-                    <p className="text-gray-600">
-                      123 Resilience Way
-                      <br />
-                      Your City, State 12345
+                    <h3 className="font-black text-white mb-2">Location</h3>
+                    <p className="text-emerald-100 text-lg">
+                      Nairobi, Kenya
                     </p>
                   </div>
                 </div>
               </div>
 
               {/* Response Time Notice */}
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-                <h3 className="font-semibold text-blue-900 mb-2">
-                  What to Expect
-                </h3>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li>• We typically respond within 24 hours on business days</li>
-                  <li>• Initial consultations are complimentary</li>
-                  <li>• We'll work with you to understand your specific needs</li>
-                  <li>• All inquiries are handled with complete confidentiality</li>
-                </ul>
+              <div className="bg-amber-400/10 border-2 border-amber-400/30 rounded-xl p-8 mt-10">
+                <div className="flex items-start">
+                  <Sparkles className="h-6 w-6 text-amber-400 mt-1 flex-shrink-0" />
+                  <div className="ml-4">
+                    <h3 className="font-black text-white mb-3 text-lg">
+                      What to Expect
+                    </h3>
+                    <ul className="space-y-2 text-emerald-100">
+                      <li>• Response within 24 hours on business days</li>
+                      <li>• Complimentary initial consultations</li>
+                      <li>• Customized solutions for your needs</li>
+                      <li>• Complete confidentiality guaranteed</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Ready to Begin?
-          </h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Every journey to resilience starts with a single conversation. Let's start yours today.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-900 hover:bg-blue-800">
-              <Phone className="mr-2 h-5 w-5" />
-              Call Us Now
-            </Button>
-            <Button size="lg" variant="outline">
-              <Mail className="mr-2 h-5 w-5" />
-              Send an Email
-            </Button>
           </div>
         </div>
       </section>
