@@ -37,15 +37,16 @@ export function HomePage() {
         <div className="relative w-full pl-10 sm:pl-16 lg:pl-24 pr-4 sm:pr-6 lg:pr-8 py-20 md:py-32 z-20">
           <div className="max-w-6xl">
             {/* Main Headline */}
-            <h1 className="text-6xl md:text-8xl font-black mb-8 leading-[0.95] text-white">
-              Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-200">Strength,</span> Clarity &
-              <span className="block text-emerald-300">True North</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-[0.95] text-white">
+              Where Strength <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-200">Meets Clarity,</span> & Leadership Finds
+              <span className="block text-emerald-300">Its True North</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-emerald-100 mb-12 leading-relaxed font-light max-w-2xl">
-              Transform through <span className="font-semibold text-amber-300">mountain expeditions</span>, 
-              battle-tested frameworks, and proven methodologies that turn resilience theory into 
-              <span className="font-semibold text-amber-300"> lived practice</span>.
+            <p className="text-xl md:text-2xl text-emerald-100 mb-12 leading-relaxed font-light max-w-3xl">
+              At Anchorpoint Resilience Solutions, we empower individuals, leaders and institutions 
+              to thrive amid uncertainty, build resilient systems and lead with integrity—grounded in 
+              <span className="font-semibold text-amber-300"> lived experience</span> and sharpened through 
+              the realities of leadership under pressure.
             </p>
             
             {/* CTA Buttons */}

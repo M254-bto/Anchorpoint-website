@@ -201,10 +201,10 @@ export function ContactPage() {
                   <div className="ml-4">
                     <h3 className="font-black text-white mb-2">Phone</h3>
                     <a
-                      href="tel:+254700000000"
+                      href="tel:+254721864581"
                       className="text-emerald-100 hover:text-amber-400 transition-colors text-lg"
                     >
-                      +254 700 000 000
+                      +254 721 864 581
                     </a>
                   </div>
                 </div>

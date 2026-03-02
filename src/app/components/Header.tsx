@@ -9,7 +9,7 @@ export function Header() {
   const navigation = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Workshops', path: '/training' },
+    { name: 'Corporate governance', path: '/training' },
     { name: 'Books', path: '/books' },
     { name: 'Contact', path: '/contact' },
   ];

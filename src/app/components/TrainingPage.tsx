@@ -1,7 +1,6 @@
 import { Link } from 'react-router';
-import { Users, Building2, Mountain, BookOpen, Target, Calendar, TrendingUp, Shield, ArrowRight, CheckCircle2, Scale, Heart, AlertTriangle, Compass, Zap, Award } from 'lucide-react';
+import { Users, Building2, Mountain, BookOpen, Target, Calendar, TrendingUp, Shield, ArrowRight, CheckCircle2, Heart, AlertTriangle, Compass, Award } from 'lucide-react';
 import { Button } from '@/app/components/ui/button';
-import { Card, CardContent } from '@/app/components/ui/card';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 
 export function TrainingPage() {
@@ -35,7 +34,7 @@ export function TrainingPage() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-emerald-100 leading-relaxed mb-10 max-w-3xl">
-              From compliance checklists to the real world. Build governance systems that are 
+              Where Governance Meets Resilience. Build governance systems that are 
               <span className="text-amber-300 font-bold"> practical, ethical, and resilient</span>—not merely compliant.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -70,17 +69,18 @@ export function TrainingPage() {
               </h2>
               <div className="space-y-4 text-lg text-neutral-700 leading-relaxed">
                 <p>
-                  I learned governance in environments where projects were abruptly terminated, 
-                  organizations folded due to resource constraints, partnerships disintegrated under 
-                  leadership conflict, and leaders faced ethical dilemmas with no easy answers.
+                  Zachary's professional journey has taken him through environments where projects were 
+                  abruptly shut down, partnerships collapsed under internal conflict, organizations 
+                  struggled under resource constraints, and leaders faced ethical dilemmas with no easy answers.
+                </p>
+                <p>
+                  These experiences shaped <span className="font-black text-amber-600">Governance in the Trenches: 
+                  Overcoming Business Failures with Resilience</span>, a framework that addresses the realities 
+                  leaders face in volatile and resource-constrained contexts.
                 </p>
                 <p className="font-semibold text-emerald-900">
                   Governance is rarely tested in ideal conditions. It is tested in uncertainty—when 
                   margins are thin, information is incomplete, and leaders must decide under pressure.
-                </p>
-                <p>
-                  <span className="font-black text-amber-600">Governance in the Trenches</span> speaks 
-                  directly to leaders navigating these realities.
                 </p>
               </div>
             </div>
@@ -88,12 +88,12 @@ export function TrainingPage() {
             {/* Right: Reality Boxes */}
             <div className="grid grid-cols-2 gap-4">
               {[
-                { icon: AlertTriangle, text: "Projects abruptly terminated" },
-                { icon: Building2, text: "Organizations folded under resource constraints" },
-                { icon: Users, text: "Partnerships collapsed from internal conflict" },
-                { icon: Target, text: "Leaders faced ethical dilemmas" },
-                { icon: TrendingUp, text: "Jobs lost through distant decisions" },
-                { icon: Shield, text: "Trust eroded by governance failure" }
+                { icon: AlertTriangle, text: "Projects abruptly shut down" },
+                { icon: Users, text: "Partnerships collapsed under internal conflict" },
+                { icon: Building2, text: "Organizations struggled under resource constraints" },
+                { icon: Target, text: "Leaders faced ethical dilemmas with no easy answers" },
+                { icon: TrendingUp, text: "Decisions affected livelihoods and trust" },
+                { icon: Shield, text: "Institutional stability under constant strain" }
               ].map((item, idx) => (
                 <div key={idx} className="bg-gradient-to-br from-emerald-50 to-teal-50 border-2 border-emerald-200 rounded-2xl p-6 hover:border-amber-400 hover:shadow-xl transition-all duration-300">
                   <item.icon className="h-8 w-8 text-emerald-700 mb-3" />
@@ -125,8 +125,11 @@ export function TrainingPage() {
               </span>
             </h2>
             <p className="text-xl text-emerald-100 max-w-3xl mx-auto leading-relaxed">
-              Corporate governance as a <span className="text-amber-300 font-bold">resilience system</span>—designed 
-              to help organizations anticipate shocks, withstand disruption, and recover with integrity.
+              Just as climbers rely on preparation, discipline and ethical judgment to reach the summit, 
+              organizations survive and thrive when leadership, accountability and adaptive systems are in place.
+            </p>
+            <p className="text-lg text-amber-200 max-w-3xl mx-auto leading-relaxed mt-4">
+              Poor governance on a mountain can cost lives. Poor governance in an organization can cost futures.
             </p>
           </div>
 
@@ -134,33 +137,28 @@ export function TrainingPage() {
             {[
               {
                 icon: CheckCircle2,
-                title: "Clear Roles & Accountability",
+                title: "Clear roles and accountability",
                 description: "Everyone knows their responsibility and authority"
               },
               {
                 icon: Shield,
-                title: "Sound Preparation & Risk Awareness",
-                description: "Anticipate challenges before they become crises"
+                title: "Ethical decision-making under pressure",
+                description: "Values-driven choices when resources are thin and stakes are high"
               },
               {
                 icon: Target,
-                title: "Ethical Leadership Under Pressure",
-                description: "Values-driven decisions when stakes are highest"
+                title: "Risk awareness and disciplined planning",
+                description: "Anticipate challenges before they become crises"
               },
               {
                 icon: Compass,
-                title: "Disciplined Decision-Making",
-                description: "Structured processes that prevent drift"
-              },
-              {
-                icon: Zap,
-                title: "Adaptive When Conditions Change",
+                title: "Adaptive capacity in changing environments",
                 description: "Flexibility without compromising core principles"
               },
               {
                 icon: Heart,
-                title: "Human-Centered Governance",
-                description: "Recognizing impact on people, not just structures"
+                title: "Human-centered governance",
+                description: "Protects people, not just structures"
               }
             ].map((principle) => (
               <div key={principle.title} className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300">
@@ -182,7 +180,7 @@ export function TrainingPage() {
               Who This Is For
             </h2>
             <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
-              Leaders operating in the real world—where decisions have human consequences
+              Leaders operating in the real world, where decisions have human consequences
             </p>
           </div>
 
@@ -190,33 +188,28 @@ export function TrainingPage() {
             {[
               {
                 badge: "01",
-                title: "SME Owners & Founders",
+                title: "SME owners and founders",
                 description: "Building governance from the ground up in resource-constrained environments"
               },
               {
                 badge: "02",
-                title: "Directors & Board Members",
+                title: "Directors and board members",
                 description: "Providing oversight and strategic direction under uncertainty"
               },
               {
                 badge: "03",
-                title: "Senior Managers & Executives",
+                title: "Senior managers and executives",
                 description: "Implementing governance decisions at operational level"
               },
               {
                 badge: "04",
-                title: "Family Businesses",
-                description: "Navigating transition, succession, and professionalization"
+                title: "Family businesses navigating transition",
+                description: "Navigating succession, professionalization and governance frameworks"
               },
               {
                 badge: "05",
-                title: "NGO & Social Enterprise Leaders",
-                description: "Balancing mission, impact, and institutional sustainability"
-              },
-              {
-                badge: "06",
-                title: "Emerging Market Leaders",
-                description: "Operating in volatile, resource-constrained environments"
+                title: "Organizations in high-risk environments",
+                description: "Operating in volatile and resource-constrained contexts"
               }
             ].map((audience) => (
               <div key={audience.badge} className="bg-white border-2 border-emerald-200 rounded-2xl p-8 hover:border-amber-400 hover:shadow-2xl transition-all duration-300 group">
@@ -325,32 +318,32 @@ export function TrainingPage() {
             {[
               {
                 icon: Building2,
-                title: "Executive Workshops",
+                title: "Executive workshops",
                 description: "Intensive sessions for senior leadership teams focused on strategic governance challenges"
               },
               {
                 icon: Users,
-                title: "Board & Senior Management Retreats",
+                title: "Board and senior management retreats",
                 description: "Facilitated deep-dives on governance, risk, and organizational resilience"
               },
               {
                 icon: Target,
-                title: "SME Governance Clinics",
+                title: "SME governance clinics",
                 description: "Practical, context-aware training for small and medium enterprise leaders"
               },
               {
                 icon: Shield,
-                title: "Customized In-House Training",
+                title: "Customized in-house programs",
                 description: "Tailored programs designed for your specific organizational context and challenges"
               },
               {
                 icon: TrendingUp,
-                title: "Speaking Engagements",
-                description: "Keynotes and executive briefings on governance, resilience, and leadership"
+                title: "Speaking engagements and executive briefings",
+                description: "Keynotes and briefings on governance, resilience, and leadership"
               },
               {
                 icon: Award,
-                title: "Integrated Development Programs",
+                title: "Integrated development programs",
                 description: "Governance training embedded within broader leadership and resilience initiatives"
               }
             ].map((format) => (
@@ -391,23 +384,23 @@ export function TrainingPage() {
             {[
               {
                 icon: Mountain,
-                title: "Grounded in Lived Experience",
-                description: "Not abstract theory—frameworks forged in the trenches of real organizational challenges, failures, and recoveries"
+                title: "Grounded in lived experience, not abstract theory",
+                description: "Frameworks forged in the trenches of real organizational challenges, failures, and recoveries"
               },
               {
                 icon: Target,
-                title: "Context-Aware & Emerging-Market Ready",
-                description: "Suited to African and emerging-market realities where resources are constrained and volatility is constant"
+                title: "Context-aware and suited to African and emerging-market realities",
+                description: "Where resources are constrained and volatility is constant"
               },
               {
                 icon: Heart,
-                title: "Human Lens on Governance",
-                description: "Recognizing governance impact on people, not just structures—jobs, trust, livelihoods, and futures"
+                title: "A human lens on governance",
+                description: "Recognizing its impact on people, not just structures—jobs, trust, livelihoods, and futures"
               },
               {
                 icon: Shield,
-                title: "Integration of Resilience Thinking",
-                description: "Governance as a resilience system—preparing for shocks, withstanding disruption, recovering with integrity"
+                title: "Integration of resilience thinking into leadership and oversight",
+                description: "Preparing for shocks, withstanding disruption, and recovering with integrity"
               }
             ].map((difference) => (
               <div key={difference.title} className="bg-gradient-to-br from-emerald-50 to-teal-50 border-2 border-emerald-200 rounded-3xl p-10 hover:border-amber-400 hover:shadow-2xl transition-all duration-300 group">

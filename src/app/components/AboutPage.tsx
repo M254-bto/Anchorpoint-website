@@ -28,15 +28,19 @@ export function AboutPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
-              About the Founder:<br />
+              About Anchorpoint<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-200">
-                A Resilience Journey
+                Resilience Solutions
               </span>
             </h1>
+            <p className="text-2xl md:text-3xl text-amber-200 font-bold leading-relaxed max-w-3xl mb-6">
+              Where Strength Meets Clarity — and Leadership Finds Its True North
+            </p>
             <p className="text-xl md:text-2xl text-emerald-100 leading-relaxed max-w-3xl">
-              Anchorpoint Resilience Solutions was born not from theory alone, but from the lived 
-              experience of navigating failure, rediscovering purpose, and finding strength through 
-              Kenya's mountains and life's most demanding trials.
+              At Anchorpoint Resilience Solutions (ARS), we empower individuals, leaders and organizations 
+              to navigate uncertainty, strengthen resilience and lead with integrity. Our approach integrates 
+              practical experience, governance insight and proven resilience frameworks to help clients withstand 
+              disruption, make courageous decisions and thrive in complex environments.
             </p>
           </div>
         </div>
@@ -49,12 +53,12 @@ export function AboutPage() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-emerald-500/10 text-emerald-700 rounded-full px-4 py-2 mb-6">
               <Heart className="h-4 w-4" />
-              <span className="text-sm font-bold uppercase tracking-wider">The Story Behind ARS</span>
+              <span className="text-sm font-bold uppercase tracking-wider">Our Founder</span>
             </div>
             <h2 className="text-5xl md:text-6xl font-black text-neutral-900 mb-6 leading-tight">
-              Beyond the Valleys,<br />
+              Zachary Kabera<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
-                Toward the Peak
+                Founder & Lead Consultant
               </span>
             </h2>
           </div>
@@ -63,30 +67,29 @@ export function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div className="order-2 md:order-1">
               <h3 className="text-3xl font-black text-neutral-900 mb-6">
-                Where It Began: The Early Climbs
+                Blending Academic Rigor with Practical Experience
               </h3>
               
               <div className="space-y-4 text-neutral-700 leading-relaxed text-lg">
-                <p className="font-semibold text-emerald-900">
-                  Resilience did not begin for me in boardrooms, books, or training halls. 
-                  It began on long, lonely paths—often muddy, dangerous and uncertain.
+                <p>
+                  Zachary Kabera is a PhD Candidate in Business Administration, specializing in Leadership 
+                  and Corporate Governance, blending rigorous academic research with practical, high-pressure 
+                  leadership experience.
                 </p>
                 <p>
-                  At just ten years old, I learned what endurance meant. My only brother, living with epilepsy 
-                  and speech challenges, suffered severe burns and spent ten months in a hospital twelve 
-                  kilometres from our rural home. With impassable roads, no transport and little money, 
-                  someone had to walk. That someone was me.
-                </p>
-                <p>
-                  Every afternoon after school, I changed out of my uniform and walked—crossing swollen rivers, 
-                  skirting wild animals and pressing on through relentless rain. I walked not because it was easy, 
-                  but because love demanded it.
+                  Throughout his career, he has held leadership roles in audit firms, international organizations, 
+                  and private business ventures, navigating organizational disruptions, ethical dilemmas, and 
+                  governance breakdowns. These experiences inform his work in executive training, board 
+                  development and organizational resilience consulting.
                 </p>
                 <div className="bg-emerald-50 border-l-4 border-emerald-600 p-6 rounded-r-xl">
-                  <p className="font-bold text-emerald-900 italic">
-                    "Those journeys, repeated almost daily for ten months, quietly shaped something deep within me: 
-                    discipline, responsibility, courage and faith. Those were my first climbs—long before I ever 
-                    touched a mountain."
+                  <p className="font-bold text-emerald-900">
+                    Beyond professional practice, he is an accomplished author. He has published 
+                    <span className="italic"> Unshaken: Finding Your True North Through Life's Trials</span> and 
+                    <span className="italic"> Cracking the Code: Unlocking True Masculine Strength</span>, and is completing 
+                    two additional manuscripts: <span className="italic">Beyond the Peak: Lessons on Life and Resilience 
+                    from Kenya's Mountains</span> and <span className="italic">Governance in the Trenches: Overcoming 
+                    Business Failures with Resilience</span>.
                   </p>
                 </div>
               </div>
@@ -119,29 +122,22 @@ export function AboutPage() {
 
             <div>
               <h3 className="text-3xl font-black text-neutral-900 mb-6">
-                The Valleys: When Everything Shifted
+                Lessons from Kenya's Mountains
               </h3>
               
               <div className="space-y-4 text-neutral-700 leading-relaxed text-lg">
                 <p>
-                  Life did not get easier with age. While still at university, my father passed away suddenly. 
-                  The ground beneath me shifted. I had no hand to guide me into manhood, marriage, or leadership. 
-                  Yet the responsibility to steady the family remained.
+                  An avid mountain climber, Zachary draws lessons from Kenya's peaks to illustrate discipline, 
+                  preparation, ethical decision-making and perseverance—key principles that underpin his training programs.
                 </p>
-                <p>
-                  Marriage brought love, but also unexpected trials. Employment came with doors opening and 
-                  abruptly closing. Businesses failed. Careers ended without warning.
-                </p>
-                <p className="font-semibold text-neutral-900">
-                  Then came losses no parent or spouse is ever prepared for—the passing of our daughter Carol 
-                  in 2010 after a battle with kidney failure, and later, the loss of my beloved wife Esther 
-                  in 2015 after years of illness.
+                <p className="font-semibold text-emerald-900">
+                  His writing bridges personal resilience, leadership, and governance—providing frameworks that 
+                  leaders can apply in high-pressure, resource-constrained environments.
                 </p>
                 <div className="bg-amber-50 border-l-4 border-amber-600 p-6 rounded-r-xl">
                   <p className="font-bold text-amber-900 italic">
-                    "Those seasons brought me to rock bottom. I was broken, grieving and suddenly both father 
-                    and mother to three young people who still needed hope. I had every reason to stop. But 
-                    resilience is not the absence of pain—it is choosing to rise, even when your heart is shattered."
+                    "Mountain hiking has become both a spiritual discipline and a resilience classroom. 
+                    What the body learns on the trail, the mind and soul remember in leadership."
                   </p>
                 </div>
               </div>
@@ -154,28 +150,39 @@ export function AboutPage() {
               <div className="text-center mb-10">
                 <Mountain className="h-16 w-16 text-amber-400 mx-auto mb-6" />
                 <h3 className="text-4xl font-black mb-4">
-                  Why Mountains Matter to Me
+                  Our Philosophy
                 </h3>
                 <p className="text-xl text-emerald-100 italic">
-                  Not as an escape—but as a mirror.
+                  Resilience is both personal and organizational.
                 </p>
               </div>
 
               <div className="space-y-6 text-emerald-100 leading-relaxed text-lg">
                 <p>
-                  Mountains do not flatter you. They expose your limits, demand preparation, punish shortcuts 
-                  and reward perseverance. Every hike reminds me that progress is step by step, that storms pass, 
-                  that rest matters and that the summit is never reached accidentally.
+                  At ARS, we believe that resilience is both personal and organizational. Just as climbers rely on 
+                  preparation, clarity and endurance to reach the summit, leaders and institutions must cultivate 
+                  systems and mindsets that withstand stress, disruption and uncertainty.
                 </p>
-                <p>
-                  On Kenya's mountains, I process grief, recalibrate purpose and rediscover my True North. 
-                  Each climb reflects life itself: valleys of doubt, steep ascents of effort, moments when 
-                  quitting feels reasonable—and the quiet triumph of pressing on anyway.
+                <p className="font-semibold text-amber-200">
+                  Our programs integrate:
                 </p>
+                <ul className="space-y-3 ml-6">
+                  <li className="flex items-start">
+                    <span className="text-amber-400 font-black mr-3 mt-1">•</span>
+                    <span><strong>Leadership resilience</strong> – cultivating mental fortitude and decision-making under pressure</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-amber-400 font-black mr-3 mt-1">•</span>
+                    <span><strong>Corporate governance</strong> – building ethical, accountable and durable organizational systems</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-amber-400 font-black mr-3 mt-1">•</span>
+                    <span><strong>Applied life lessons</strong> – drawing from lived experience and real-world challenges</span>
+                  </li>
+                </ul>
                 <div className="bg-amber-400/10 backdrop-blur-md border border-amber-400/20 rounded-2xl p-8 mt-8">
                   <p className="font-bold text-amber-300 text-xl text-center">
-                    "Mountain hiking has become both my spiritual discipline and my resilience classroom. 
-                    What the body learns on the trail, the mind and soul remember in life."
+                    "We do not teach theory in isolation; we equip leaders to act decisively when it matters most."
                   </p>
                 </div>
               </div>
@@ -190,12 +197,12 @@ export function AboutPage() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-amber-500/10 text-amber-700 rounded-full px-4 py-2 mb-6">
               <Sparkles className="h-4 w-4" />
-              <span className="text-sm font-bold uppercase tracking-wider">The Mission</span>
+              <span className="text-sm font-bold uppercase tracking-wider">Our Foundation</span>
             </div>
             <h2 className="text-5xl md:text-6xl font-black text-neutral-900 mb-6 leading-tight">
-              From Lived Experience<br />
+              Mission, Vision &<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
-                To Purpose
+                What Drives Us
               </span>
             </h2>
           </div>
@@ -204,18 +211,18 @@ export function AboutPage() {
             {[
               {
                 icon: Target,
-                title: "Purpose Under Pressure",
-                description: "Every summit requires clarity of purpose when fatigue and doubt threaten to turn you back."
+                title: "Our Mission",
+                description: "To empower individuals, leaders and organizations to navigate adversity, strengthen governance and achieve sustainable resilience, anchored in real-life experience, ethical clarity and tested insight."
               },
               {
-                icon: TrendingUp,
-                title: "Endurance Beyond Comfort",
-                description: "Mountains teach that resilience is built in the discomfort zone—where growth actually happens."
+                icon: Shield,
+                title: "Our Vision",
+                description: "A world where resilience is not accidental but intentional—where leaders and organizations build systems capable of thriving through complexity, change, and crisis."
               },
               {
                 icon: Compass,
-                title: "Finding True North",
-                description: "In the mountains, navigation is literal. In life, True North is your unwavering direction when everything else shifts."
+                title: "Our Approach",
+                description: "We integrate leadership resilience, corporate governance, and applied life lessons—equipping leaders to act decisively when it matters most."
               }
             ].map((principle) => (
               <div key={principle.title} className="group relative overflow-hidden rounded-3xl bg-white p-1 shadow-lg hover:shadow-2xl transition-all duration-300">
@@ -235,35 +242,45 @@ export function AboutPage() {
           <div className="bg-gradient-to-br from-white to-neutral-50 rounded-3xl p-12 border border-neutral-200">
             <div className="max-w-3xl mx-auto space-y-6 text-neutral-700 leading-relaxed text-lg">
               <p className="text-2xl font-black text-neutral-900">
-                Anchorpoint Resilience Solutions was born from these lived realities—not theory, 
-                not slogans, but scars that healed into strength.
+                Why Anchorpoint Resilience Solutions
               </p>
-              <p>
-                Whether I am mentoring men, guiding leaders, training organizations, or walking 
-                alongside others through adversity, I draw from a journey shaped by loss, faith, 
-                endurance and hope.
-              </p>
-              <div className="grid md:grid-cols-3 gap-4 my-8">
-                <div className="text-center p-6 bg-emerald-50 rounded-2xl">
-                  <p className="text-3xl font-black text-emerald-900 mb-2">Resilience</p>
-                  <p className="text-sm text-emerald-700">Can be built</p>
-                </div>
-                <div className="text-center p-6 bg-amber-50 rounded-2xl">
-                  <p className="text-3xl font-black text-amber-900 mb-2">Purpose</p>
-                  <p className="text-sm text-amber-700">Can be rediscovered</p>
-                </div>
-                <div className="text-center p-6 bg-teal-50 rounded-2xl">
-                  <p className="text-3xl font-black text-teal-900 mb-2">No Valley</p>
-                  <p className="text-sm text-teal-700">Is final</p>
-                </div>
-              </div>
-              <div className="bg-gradient-to-r from-emerald-900 to-teal-900 text-white p-8 rounded-2xl text-center">
-                <p className="text-2xl font-black mb-4">My story is not about perfection. It is about perseverance.</p>
-                <p className="text-xl text-emerald-100 italic">
-                  You can lose much and still rise. You can grieve deeply and still lead. 
-                  You can be shaken—and yet remain unshaken.
-                </p>
-              </div>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <span className="text-emerald-600 font-black mr-3 mt-1">•</span>
+                  <div>
+                    <strong className="text-neutral-900">Experience-backed insights</strong> – decades of professional 
+                    practice in governance, audit, and leadership roles
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-emerald-600 font-black mr-3 mt-1">•</span>
+                  <div>
+                    <strong className="text-neutral-900">Academic grounding</strong> – PhD-level research in leadership 
+                    and corporate governance
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-emerald-600 font-black mr-3 mt-1">•</span>
+                  <div>
+                    <strong className="text-neutral-900">Proven frameworks</strong> – resilience and governance models 
+                    derived from real-world crises
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-emerald-600 font-black mr-3 mt-1">•</span>
+                  <div>
+                    <strong className="text-neutral-900">Human-centered approach</strong> – addressing people, culture, 
+                    and organizational impact alongside structures
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-emerald-600 font-black mr-3 mt-1">•</span>
+                  <div>
+                    <strong className="text-neutral-900">Cross-sector applicability</strong> – serving individuals, 
+                    SMEs, family businesses, NGOs, and corporate boards
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -301,9 +318,9 @@ export function AboutPage() {
               </div>
               <h3 className="text-2xl font-black mb-4">Our Mission</h3>
               <p className="text-emerald-100 leading-relaxed">
-                To equip individuals and organizations with practical frameworks, experiential 
-                learning, and resilience methodologies that enable them to remain grounded, 
-                adaptive, and effective through every challenge.
+                To empower individuals, leaders and organizations to navigate adversity, strengthen 
+                governance and achieve sustainable resilience, anchored in real-life experience, 
+                ethical clarity and tested insight.
               </p>
             </div>
 
@@ -327,9 +344,10 @@ export function AboutPage() {
               </div>
               <h3 className="text-2xl font-black mb-4">Our Philosophy</h3>
               <p className="text-emerald-100 leading-relaxed">
-                Resilience is not theory—it's lived practice. Like summiting a mountain, it 
-                requires preparation, endurance, clarity of purpose, and the courage to keep 
-                moving when the path becomes steep.
+                At ARS, we believe that resilience is both personal and organizational. Just as 
+                climbers rely on preparation, clarity and endurance to reach the summit, leaders 
+                and institutions must cultivate systems and mindsets that withstand stress, 
+                disruption and uncertainty.
               </p>
             </div>
           </div>
@@ -398,20 +416,24 @@ export function AboutPage() {
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
             {[
               {
-                title: 'Evidence-Based + Experience-Tested',
-                description: 'Our frameworks combine academic rigor with real-world resilience practice forged through personal trials, business failures, and mountain expeditions.',
+                title: 'Experience-backed insights',
+                description: 'Decades of professional practice in governance, audit, and leadership roles across audit firms, international organizations, and private business ventures.',
               },
               {
-                title: 'Experiential Learning Model',
-                description: 'We don\'t just teach resilience—we create experiences that embed it. From mountain climbs to corporate simulations, transformation happens through practice.',
+                title: 'Academic grounding',
+                description: 'PhD-level research in leadership and corporate governance, blending rigorous academic research with practical experience.',
               },
               {
-                title: 'Holistic Integration',
-                description: 'Mountains as metaphor and method. Books as thought leadership. Workshops as applied transformation. Governance as organizational resilience. All integrated.',
+                title: 'Proven frameworks',
+                description: 'Resilience and governance models derived from real-world crises, organizational disruptions, and ethical dilemmas.',
               },
               {
-                title: 'Sustainable Transformation',
-                description: 'Quick fixes don\'t build True North. Our approach creates lasting behavioral change through deep integration of principles, not surface-level motivation.',
+                title: 'Human-centered approach',
+                description: 'Addressing people, culture, and organizational impact alongside structures—recognizing that governance affects lives, not just policies.',
+              },
+              {
+                title: 'Cross-sector applicability',
+                description: 'Serving individuals, SMEs, family businesses, NGOs, and corporate boards with context-aware, adaptable frameworks.',
               },
             ].map((item, index) => (
               <div key={item.title} className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-600 to-teal-700 p-1">
@@ -470,7 +492,7 @@ export function AboutPage() {
                 </Link>
                 <Link to="/training">
                   <Button size="lg" variant="outline" className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-emerald-950 font-bold px-10 py-7 text-lg">
-                    Explore Workshops
+                    Corporate governance
                   </Button>
                 </Link>
               </div>
