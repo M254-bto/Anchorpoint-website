@@ -1,7 +1,6 @@
 import { Link } from 'react-router';
 import { ArrowRight, Users, Building2, BookOpen, Mountain, Sparkles, TrendingUp, Zap, Star, Quote, ShoppingCart } from 'lucide-react';
 import { Button } from '@/app/components/ui/button';
-import { Card, CardContent } from '@/app/components/ui/card';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 import { Input } from '@/app/components/ui/input';
 
@@ -487,10 +486,17 @@ export function HomePage() {
             workshops, books, and events. Join our community committed to building True North.
           </p>
           
-          <form className="max-w-xl mx-auto">
+          <form action="https://formsubmit.co/afribraintechnologies@gmail.com" method="POST" className="max-w-xl mx-auto">
+            <input type="hidden" name="_subject" value="New Newsletter Subscription - Anchorpoint Resilience" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="subscription_type" value="Homepage Newsletter" />
+            
             <div className="flex flex-col sm:flex-row gap-4 bg-white/5 backdrop-blur-md p-2 rounded-2xl border border-white/10">
               <Input 
-                type="email" 
+                type="email"
+                name="email"
+                required
                 placeholder="Enter your email address" 
                 className="flex-1 bg-white/10 border-white/20 text-white placeholder:text-emerald-200 focus:bg-white/20 h-14 text-lg rounded-xl"
               />

@@ -1,38 +1,10 @@
-import { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Mountain, Sparkles } from 'lucide-react';
 import { Button } from '@/app/components/ui/button';
 import { Input } from '@/app/components/ui/input';
 import { Label } from '@/app/components/ui/label';
 import { Textarea } from '@/app/components/ui/textarea';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/app/components/ui/select';
 
 export function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    organization: '',
-    email: '',
-    phone: '',
-    interest: '',
-    message: '',
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your interest! We will contact you soon.');
-    setFormData({
-      name: '',
-      organization: '',
-      email: '',
-      phone: '',
-      interest: '',
-      message: '',
-    });
-  };
-
-  const handleChange = (field: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }));
-  };
 
   return (
     <div className="bg-neutral-50">
@@ -74,13 +46,17 @@ export function ContactPage() {
                 Fill out the form and we'll respond within 24 hours.
               </p>
 
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formsubmit.co/afribraintechnologies@gmail.com" method="POST" className="space-y-6">
+                {/* FormSubmit Configuration */}
+                <input type="hidden" name="_subject" value="New Contact Form Submission - Anchorpoint Resilience" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                
                 <div>
                   <Label htmlFor="name">Full Name *</Label>
                   <Input
                     id="name"
-                    value={formData.name}
-                    onChange={(e) => handleChange('name', e.target.value)}
+                    name="name"
                     required
                     placeholder="Your full name"
                     className="mt-1"
@@ -91,8 +67,7 @@ export function ContactPage() {
                   <Label htmlFor="organization">Organization (Optional)</Label>
                   <Input
                     id="organization"
-                    value={formData.organization}
-                    onChange={(e) => handleChange('organization', e.target.value)}
+                    name="organization"
                     placeholder="Your organization name"
                     className="mt-1"
                   />
@@ -102,9 +77,8 @@ export function ContactPage() {
                   <Label htmlFor="email">Email Address *</Label>
                   <Input
                     id="email"
+                    name="email"
                     type="email"
-                    value={formData.email}
-                    onChange={(e) => handleChange('email', e.target.value)}
                     required
                     placeholder="your@email.com"
                     className="mt-1"
@@ -115,9 +89,8 @@ export function ContactPage() {
                   <Label htmlFor="phone">Phone Number *</Label>
                   <Input
                     id="phone"
+                    name="phone"
                     type="tel"
-                    value={formData.phone}
-                    onChange={(e) => handleChange('phone', e.target.value)}
                     required
                     placeholder="+254 XXX XXX XXX"
                     className="mt-1"
@@ -126,30 +99,27 @@ export function ContactPage() {
 
                 <div>
                   <Label htmlFor="interest" className="text-neutral-700">Area of Interest *</Label>
-                  <Select
-                    value={formData.interest}
-                    onValueChange={(value) => handleChange('interest', value)}
+                  <select
+                    id="interest"
+                    name="interest"
+                    required
+                    className="w-full mt-1 px-3 py-2 border border-neutral-300 rounded-md bg-white text-neutral-900 focus:outline-none focus:ring-2 focus:ring-emerald-500"
                   >
-                    <SelectTrigger className="mt-1 border-neutral-300">
-                      <SelectValue placeholder="Select an option" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="personal-workshops">Personal Resilience Workshops</SelectItem>
-                      <SelectItem value="mens-development">Men's Development Programs</SelectItem>
-                      <SelectItem value="mountain-climb">Mountain Climb Experience</SelectItem>
-                      <SelectItem value="corporate-training">Corporate Training & Governance</SelectItem>
-                      <SelectItem value="books">Books & Publications</SelectItem>
-                      <SelectItem value="general">General Inquiry</SelectItem>
-                    </SelectContent>
-                  </Select>
+                    <option value="">Select an option</option>
+                    <option value="Personal Resilience Workshops">Personal Resilience Workshops</option>
+                    <option value="Men's Development Programs">Men's Development Programs</option>
+                    <option value="Mountain Climb Experience">Mountain Climb Experience</option>
+                    <option value="Corporate Training & Governance">Corporate Training & Governance</option>
+                    <option value="Books & Publications">Books & Publications</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                  </select>
                 </div>
 
                 <div>
                   <Label htmlFor="message" className="text-neutral-700">Your Message *</Label>
                   <Textarea
                     id="message"
-                    value={formData.message}
-                    onChange={(e) => handleChange('message', e.target.value)}
+                    name="message"
                     required
                     placeholder="Tell us about your needs, goals, or questions..."
                     rows={6}

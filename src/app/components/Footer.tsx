@@ -24,9 +24,16 @@ export function Footer() {
                 Get exclusive insights on resilience, leadership, and mountain wisdom directly to your inbox.
               </p>
             </div>
-            <form className="flex flex-col sm:flex-row gap-3">
+            <form action="https://formsubmit.co/afribraintechnologies@gmail.com" method="POST" className="flex flex-col sm:flex-row gap-3">
+              <input type="hidden" name="_subject" value="New Newsletter Subscription - Anchorpoint Resilience" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="subscription_type" value="Footer Newsletter" />
+              
               <Input 
-                type="email" 
+                type="email"
+                name="email"
+                required
                 placeholder="Enter your email" 
                 className="flex-1 bg-white/10 border-white/20 text-white placeholder:text-emerald-200 focus:bg-white/20 h-12 rounded-xl"
               />
