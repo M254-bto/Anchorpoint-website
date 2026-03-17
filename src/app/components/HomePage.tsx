@@ -37,15 +37,15 @@ export function HomePage() {
           <div className="max-w-6xl">
             {/* Main Headline */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-[0.95] text-white">
-              Where Strength <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-200">Meets Clarity,</span> & Leadership Finds
+              Where Strength <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-200">Meets Clarity</span><span className="text-amber-300">— Leadership Finds</span> 
               <span className="block text-emerald-300">Its True North</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-emerald-100 mb-12 leading-relaxed font-light max-w-3xl">
-              At Anchorpoint Resilience Solutions, we empower individuals, leaders and institutions 
-              to thrive amid uncertainty, build resilient systems and lead with integrity—grounded in 
-              <span className="font-semibold text-amber-300"> lived experience</span> and sharpened through 
-              the realities of leadership under pressure.
+              At Anchorpoint Resilience Solutions (ARS), we empower individuals, leaders and organizations 
+              to navigate uncertainty, strengthen resilience and lead with integrity. Our approach integrates 
+              practical experience, governance insight and proven resilience frameworks to help clients withstand 
+              disruption, make courageous decisions and thrive in complex environments.
             </p>
             
             {/* CTA Buttons */}
@@ -115,7 +115,7 @@ export function HomePage() {
                   
                   <p className="text-emerald-100 mb-8 text-lg leading-relaxed">
                     Mountain climbs meet proven frameworks. Build authentic strength, emotional resilience, 
-                    and discover your True North through <span className="font-bold text-amber-300">lived experience</span>.
+                    and discover your True North through <span className="font-bold text-amber-300">lived experiences</span>.
                   </p>
 
                   <div className="space-y-3 mb-8">

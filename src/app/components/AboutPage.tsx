@@ -67,13 +67,13 @@ export function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center mb-20">
             <div className="order-2 md:order-1">
               <h3 className="text-3xl font-black text-neutral-900 mb-6">
-                Blending Academic Rigor with Practical Experience
+                Blending Academic Rigour with Practical Experience
               </h3>
               
               <div className="space-y-4 text-neutral-700 leading-relaxed text-lg">
                 <p>
                   Zachary Kabera is a PhD Candidate in Business Administration, specializing in Leadership 
-                  and Corporate Governance, blending rigorous academic research with practical, high-pressure 
+                  and Corporate Governance, blending rigourous academic research with practical, high-pressure 
                   leadership experience.
                 </p>
                 <p>
@@ -177,7 +177,7 @@ export function AboutPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-amber-400 font-black mr-3 mt-1">•</span>
-                    <span><strong>Applied life lessons</strong> – drawing from lived experience and real-world challenges</span>
+                    <span><strong>Applied life lessons</strong> – drawing from lived experiences and real-world challenges</span>
                   </li>
                 </ul>
                 <div className="bg-amber-400/10 backdrop-blur-md border border-amber-400/20 rounded-2xl p-8 mt-8">
@@ -192,7 +192,7 @@ export function AboutPage() {
       </section>
 
       {/* From Experience to Purpose */}
-      <section className="py-24 md:py-32 bg-neutral-50">
+      {/* <section className="py-24 md:py-32 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-amber-500/10 text-amber-700 rounded-full px-4 py-2 mb-6">
@@ -284,7 +284,7 @@ export function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Mission, Vision & ARS Philosophy */}
       <section className="py-24 md:py-32 bg-gradient-to-br from-emerald-950 via-emerald-900 to-neutral-950 text-white relative overflow-hidden">
@@ -358,6 +358,18 @@ export function AboutPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 {
+                  icon: Building2,
+                  title: "Corporate Governance",
+                  subtitle: "Organizational Resilience",
+                  description: "Systems-level frameworks for sustainable performance"
+                },
+                {
+                  icon: Users2,
+                  title: "Workshops",
+                  subtitle: "Applied Transformation",
+                  description: "Experiential learning for lasting behavioral change"
+                },
+                {
                   icon: Mountain,
                   title: "Mountains",
                   subtitle: "Metaphor + Method",
@@ -367,20 +379,8 @@ export function AboutPage() {
                   icon: BookOpen,
                   title: "Books",
                   subtitle: "Thought Leadership",
-                  description: "Frameworks grounded in research and lived experience"
-                },
-                {
-                  icon: Users2,
-                  title: "Workshops",
-                  subtitle: "Applied Transformation",
-                  description: "Experiential learning for lasting behavioral change"
-                },
-                {
-                  icon: Building2,
-                  title: "Corporate Governance",
-                  subtitle: "Organizational Resilience",
-                  description: "Systems-level frameworks for sustainable performance"
-                }
+                  description: "Frameworks grounded in research and lived experiences"
+                }              
               ].map((element) => (
                 <div key={element.title} className="text-center group">
                   <div className="w-16 h-16 rounded-full bg-amber-400/20 group-hover:bg-amber-400/30 mx-auto mb-4 flex items-center justify-center transition-all duration-300">
@@ -433,7 +433,7 @@ export function AboutPage() {
               },
               {
                 title: 'Cross-sector applicability',
-                description: 'Serving individuals, SMEs, family businesses, NGOs, and corporate boards with context-aware, adaptable frameworks.',
+                description: 'Serving individuals, MSMEs, family businesses, NGOs, and corporate boards with context-aware, adaptable frameworks.',
               },
             ].map((item, index) => (
               <div key={item.title} className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-600 to-teal-700 p-1">

@@ -11,6 +11,8 @@ export function Header() {
     { name: 'About', path: '/about' },
     { name: 'Corporate governance', path: '/training' },
     { name: 'Books', path: '/books' },
+    { name: 'Blogs', path: '/blogs' },
+    { name: 'Podcasts', path: '/podcasts' },
     { name: 'Contact', path: '/contact' },
   ];
 

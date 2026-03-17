@@ -5,6 +5,8 @@ import { HomePage } from '@/app/components/HomePage';
 import { AboutPage } from '@/app/components/AboutPage';
 import { TrainingPage } from '@/app/components/TrainingPage';
 import { BooksPage } from '@/app/components/BooksPage';
+import { BlogsPage } from '@/app/components/BlogsPage';
+import { PodcastsPage } from '@/app/components/PodcastsPage';
 import { ContactPage } from '@/app/components/ContactPage';
 import { ScrollToTop } from '@/app/components/ScrollToTop';
 
@@ -20,6 +22,8 @@ export default function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/training" element={<TrainingPage />} />
             <Route path="/books" element={<BooksPage />} />
+            <Route path="/blogs" element={<BlogsPage />} />
+            <Route path="/podcasts" element={<PodcastsPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>

@@ -270,7 +270,7 @@ export function TrainingPage() {
               <li className="flex items-start">
                 <span className="text-amber-500 font-black mr-3 mt-1">•</span>
                 <div>
-                  <strong className="font-black text-neutral-900">Governance Challenges in SMEs & Family Businesses:</strong> Professionalization without losing entrepreneurial spirit
+                  <strong className="font-black text-neutral-900">Governance Challenges in MSMEs & Family Businesses:</strong> Professionalization without losing entrepreneurial spirit
                 </div>
               </li>
               <li className="flex items-start">
@@ -384,7 +384,7 @@ export function TrainingPage() {
             {[
               {
                 icon: Mountain,
-                title: "Grounded in lived experience, not abstract theory",
+                title: "Grounded in lived experiences, not abstract theory",
                 description: "Frameworks forged in the trenches of real organizational challenges, failures, and recoveries"
               },
               {

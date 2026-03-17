@@ -35,7 +35,7 @@ export function BooksPage() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-emerald-100 leading-relaxed mb-10 max-w-3xl">
-              Deep insights on resilience, masculinity, governance, and mountain wisdom—<span className="text-amber-300 font-bold">written from lived experience</span>, anchored in research, designed to challenge and transform.
+              Deep insights on resilience, masculinity, governance, and mountain wisdom—<span className="text-amber-300 font-bold">written from lived experiences</span>, anchored in research, designed to challenge and transform.
             </p>
           </div>
         </div>
@@ -275,7 +275,7 @@ export function BooksPage() {
                 <h4 className="font-black mb-2 text-sm">Core Themes:</h4>
                 <ul className="space-y-2 mb-6">
                   {[
-                    "Corporate governance for SMEs under pressure",
+                    "Corporate governance for MSMEs under pressure",
                     "Leadership during business failure",
                     "Failure recovery frameworks and systems",
                     "Building resilient organizational structures"

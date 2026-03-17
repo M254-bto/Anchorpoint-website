@@ -160,7 +160,7 @@ export function Footer() {
               </li>
               <li className="flex items-start space-x-2">
                 <Phone className="h-4 w-4 mt-0.5 flex-shrink-0 text-amber-400" />
-                <span>+254 721 864 581</span>
+                <span>+254 721 864 581 // 0100 178 544</span>
               </li>
               <li className="flex items-start space-x-2">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0 text-amber-400" />
@@ -177,9 +177,20 @@ export function Footer() {
 
         <div className="border-t border-emerald-800/30 pt-8">
           <div className="grid md:grid-cols-2 gap-4 items-center">
-            <p className="text-sm text-emerald-300 text-center md:text-left">
-              &copy; {new Date().getFullYear()} Anchorpoint Resilience Solutions. All rights reserved.
-            </p>
+            <div className="text-sm text-emerald-300 text-center md:text-left">
+              <p>&copy; {new Date().getFullYear()} Anchorpoint Resilience Solutions. All rights reserved.</p>
+              <p className="mt-2 text-xs text-emerald-400">
+                Website built and maintained by{' '}
+                <a 
+                  href="https://afribs.co.ke" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-amber-400 transition-colors underline decoration-dotted underline-offset-2"
+                >
+                  AfrriBrain Bespoke Software
+                </a>
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 text-sm text-emerald-200 justify-center md:justify-end">
               <Link to="/privacy" className="hover:text-amber-400 transition-colors text-center">Privacy Policy</Link>
               <Link to="/terms" className="hover:text-amber-400 transition-colors text-center">Terms of Service</Link>
