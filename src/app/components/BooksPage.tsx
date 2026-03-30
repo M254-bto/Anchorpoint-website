@@ -197,8 +197,8 @@ export function BooksPage() {
             <Card className="overflow-hidden border-2 border-amber-400/30 hover:shadow-2xl transition-all duration-300 bg-white/10 backdrop-blur-md">
               <div className="relative h-60">
                 <ImageWithFallback
-                  src="/WhatsApp Image 2026-01-29 at 11.12.59.jpeg"
-                  alt="Mountain representing Beyond the Peak"
+                  src="/Beyond the peaks cover-front.jpeg"
+                  alt="Beyond the Peak book cover"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/90 to-transparent"></div>
@@ -207,7 +207,7 @@ export function BooksPage() {
                 </div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <Mountain className="h-8 w-8 text-amber-400 mb-2" />
-                  <h3 className="text-2xl md:text-3xl font-black mb-1">
+                  <h3 className="text-2xl md:text-3xl font-black mb-1 text-white">
                     Beyond the Peak
                   </h3>
                   <p className="text-base text-amber-200 font-black">
@@ -251,17 +251,23 @@ export function BooksPage() {
 
             {/* Governance in the Trenches */}
             <Card className="overflow-hidden border-2 border-amber-400/30 hover:shadow-2xl transition-all duration-300 bg-white/10 backdrop-blur-md">
-              <div className="relative h-60 bg-gradient-to-br from-emerald-900 to-teal-900 flex items-center justify-center">
-                <div className="text-center p-6 relative z-10">
-                  <Building2 className="h-12 w-12 text-amber-400 mx-auto mb-4" />
-                  <div className="absolute top-4 left-4 bg-amber-500 text-emerald-950 px-3 py-1.5 rounded-full text-xs font-black animate-pulse shadow-lg">
-                    MANUSCRIPT
-                  </div>
-                  <h3 className="text-2xl md:text-3xl font-black mb-2">
+              <div className="relative h-60">
+                <ImageWithFallback
+                  src="/Governance in the Trenche - Book cover-front.png"
+                  alt="Governance in the Trenches book cover"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/90 to-transparent"></div>
+                <div className="absolute top-4 left-4 bg-amber-500 text-emerald-950 px-3 py-1.5 rounded-full text-xs font-black animate-pulse shadow-lg">
+                  MANUSCRIPT
+                </div>
+                <div className="absolute bottom-4 left-4 right-4">
+                  <Building2 className="h-8 w-8 text-amber-400 mb-2" />
+                  <h3 className="text-2xl md:text-3xl font-black mb-1 text-white">
                     Governance in the Trenches
                   </h3>
                   <p className="text-base text-amber-200 font-black">
-                    Overcoming Business Failures With Resilience
+                    Building Resilient leadership and stronger institutions
                   </p>
                 </div>
               </div>

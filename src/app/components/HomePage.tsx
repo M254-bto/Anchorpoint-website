@@ -298,8 +298,8 @@ export function HomePage() {
               <div className="relative bg-emerald-900/40 backdrop-blur-sm rounded-3xl overflow-hidden h-full">
                 <div className="relative h-80 overflow-hidden">
                   <ImageWithFallback
-                    src="/WhatsApp Image 2026-01-29 at 11.12.59.jpeg"
-                    alt="Mountain climb - Beyond the Peak"
+                    src="/Beyond the peaks cover-front.jpeg"
+                    alt="Beyond the Peak book cover"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-4 left-4 bg-amber-500 text-emerald-950 px-3 py-1 rounded-full text-xs font-bold animate-pulse">
@@ -329,11 +329,12 @@ export function HomePage() {
             {/* Governance in the Trenches */}
             <div className="group relative overflow-hidden rounded-3xl bg-gradient-to-br from-neutral-800 to-neutral-900 p-1">
               <div className="relative bg-neutral-900/70 backdrop-blur-sm rounded-3xl overflow-hidden h-full">
-                <div className="relative h-80 overflow-hidden bg-gradient-to-br from-neutral-700 to-neutral-900 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <Building2 className="h-16 w-16 text-amber-400 mx-auto mb-4" />
-                    <h4 className="text-2xl font-bold text-white mb-2">Governance in the Trenches</h4>
-                  </div>
+                <div className="relative h-80 overflow-hidden">
+                  <ImageWithFallback
+                    src="/Governance in the Trenche - Book cover-front.png"
+                    alt="Governance in the Trenches book cover"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
                   <div className="absolute top-4 left-4 bg-amber-500 text-neutral-950 px-3 py-1 rounded-full text-xs font-bold animate-pulse">
                     MANUSCRIPT
                   </div>
@@ -343,7 +344,7 @@ export function HomePage() {
                     Governance in the Trenches
                   </h3>
                   <p className="text-sm text-amber-300 font-semibold mb-3">
-                    Overcoming Business Failures With Resilience
+                    Building Resilient leadership and stronger institutions
                   </p>
                   <p className="text-neutral-300 text-sm mb-4 line-clamp-3">
                     Hard-won lessons from SME failures and recoveries. A practical field guide for 
