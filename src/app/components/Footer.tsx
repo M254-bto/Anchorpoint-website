@@ -105,7 +105,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-emerald-200 hover:text-amber-400 text-sm transition-colors flex items-center group">
+                <Link to="/blogs" className="text-emerald-200 hover:text-amber-400 text-sm transition-colors flex items-center group">
                   <span className="w-1 h-1 rounded-full bg-amber-400 mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   Blog & Resources
                 </Link>
