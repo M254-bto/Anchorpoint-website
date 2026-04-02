@@ -188,7 +188,7 @@ export function TrainingPage() {
             {[
               {
                 badge: "01",
-                title: "SME owners and founders",
+                title: "MSMEs owners and founders",
                 description: "Building governance from the ground up in resource-constrained environments"
               },
               {
@@ -328,7 +328,7 @@ export function TrainingPage() {
               },
               {
                 icon: Target,
-                title: "SME governance clinics",
+                title: "MSMEs governance clinics",
                 description: "Practical, context-aware training for small and medium enterprise leaders"
               },
               {

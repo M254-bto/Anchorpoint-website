@@ -273,7 +273,7 @@ export function BooksPage() {
               </div>
               <CardContent className="p-6">
                 <p className="text-emerald-100 mb-4 leading-relaxed text-sm">
-                  Hard-won lessons from real SME failures and recoveries. This is not theory—it's 
+                  Hard-won lessons from real MSMEs failures and recoveries. This is not theory—it's 
                   a practical field guide for governance, crisis management, and organizational 
                   resilience written from the trenches of business failure and recovery.
                 </p>
